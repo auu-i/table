@@ -15,7 +15,7 @@
 }
 
 body {
-  padding: 20px;
+  padding: 20px; 
 }
 
 table{
@@ -50,7 +50,24 @@ th {
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
-  overflow: scroll;
+}
+
+.fixedheader tbody {
+  display: block;
+  overflow: auto;
+  height: 500px;
+  width: 100%;
+}
+
+.fixedheader thead tr {
+  display: block;
+}
+
+.caption {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: plum;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -100,6 +117,7 @@ th {
     border-bottom: 0;
   }
 }
+
 
 @media screen and (max-width:600px) {
   table td {
